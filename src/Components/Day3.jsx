@@ -16,10 +16,8 @@ function RandomUser() {
   const fetchUser = async () => {
     try {
       setLoading(true);
-
       const res = await fetch("https://randomuser.me/api/");
       const data = await res.json();
-
       setUser(data.results[0]);
     } catch (error) {
       console.log(error);
