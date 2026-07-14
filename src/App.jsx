@@ -1,10 +1,12 @@
 import React from 'react'
-import Home from './SMS/Home'
+import StopWatch from './SMS/StopWatch'
+// import Home from './SMS/Home'
 
 function App() {
   return (
     <div>
-      <Home/>
+      {/* <Home/> */}
+      <StopWatch/>
     </div>
   )
 }
