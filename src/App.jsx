@@ -1,23 +1,12 @@
-import React, { useState } from "react";
-import Navbar from "./components/Navbar";
-import Home from "./components/Home";
-import { ThemeContext } from "./components/ThemeContext";
+import React from 'react'
+import Home from './SMS/Home'
 
 function App() {
-  const [theme, setTheme] =
-    useState("light");
-
   return (
-    <ThemeContext.Provider
-      value={{
-        theme,
-        setTheme,
-      }}
-    >
-      <Navbar />
-      <Home />
-    </ThemeContext.Provider>
-  );
+    <div>
+      <Home/>
+    </div>
+  )
 }
 
-export default App;
+export default App
